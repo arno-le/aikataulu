@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel='stylesheet' type='text/css' href='../config/bower_components/pebble-slate/dist/css/slate.min.css'>
+  <link rel='stylesheet' type='text/css' href='../config/css/style.css'>
+</head>
+<body>
+  <div class='item-container'>
+    <h1 class='title'>Asetukset </h1>
+  </div>
+
+  <div class='item-container'>
+    <div class='item-container-content'>
+      <div class='item' style = 'text-align :center'>
+		Valitse haluamasi asetukset.
+      </div>
+    </div>
+  </div>
+
+  <div class='item-container'>
+    <div class='item-container-header'> Yleiset asetukset</div>
+	
+	
+  
+   <div class='item-container-content'>
+    <!-- 
+   Maybe laters
+      <label class='item'>
+        Background Color
+        <input id='backgroundColorPicker' type='text' class='item-color item-color-sunny' value='#000000'>
+      </label>
+	  -->
+      <label class='item'>
+        24 tunnin kello
+        <input id='timeFormatCheckbox' type='checkbox' class='item-checkbox' checked>
+      </label>
+	   <label class="item">
+	   Aikaa bussin lähtöön (min)
+      <select id="timeToDeparture" dir='rtl' class="item-select">
+	   <option class="item-select-option" selected>5</option>
+        <option class="item-select-option">10 </option>
+        <option class="item-select-option">15 </option>
+		<option class="item-select-option">20 </option>
+		<option class="item-select-option">25 </option>
+		<option class="item-select-option">30 </option>
+		<option class="item-select-option">35 </option>
+		<option class="item-select-option">40 </option>
+      </select>
+    </label>
+	<label class="item">
+	  Päivitystiheys (min)
+      <select id="refreshRate" dir='rtl' class="item-select">
+        <option class="item-select-option">15 </option>
+		<option class="item-select-option">20</option>
+		<option class="item-select-option" selected>30</option>
+		<option class="item-select-option">40</option>
+		<option class="item-select-option">60 </option>
+      </select>
+    </label>
+    </div>
+
+  
+  <div class='item-container'>
+  <h2 class='title'>Aikataulun asetukset  </h2>
+	<div class='item-container-header'>  </div>
+	 <div class="item-container-content">
+	 	    <div class='item-container-footer'>
+			Anna pysäkin nelinumeroinen koodi. Löydät nämä TKL:n kotisivuilta.<br>
+			Mikäli kenttä on tyhjä, näytetään pysäkkinä 0001 - Keskustori M.
+		</div>
+	</div>
+	
+	<div class='item-container-header'> Pysäkki 1 </div>
+	 <div class="item-container-content">
+		<label class="item">
+			Pysäkin numero
+			<div class="item-input-wrapper">
+			<input type="text" class="item-input" maxlength="4" id="stop-input1" placeholder="Anna pysäkin numero (esim. 0001)" value="0001">
+			</div>
+		</label>	
+		
+	   <label class="item">
+			Bussin numero
+			<select id="lineCodeOne" dir='rtl' class="item-select">
+			</select>
+		</label>
+		</div>
+	
+		<div class='item-container-header'> Pysäkki 2 </div>
+			<div class="item-container-content">		
+			<label class="item">
+				Pysäkin numero
+				<div class="item-input-wrapper">
+				<input type="text" class="item-input" maxlength="4" id="stop-input2" placeholder="Anna pysäkin numero (esim. 0002)" value="0002">
+				</div>
+			</label>
+		
+		<label class="item">
+			Bussin numero
+			<select id="lineCodeTwo" dir='rtl' class="item-select">
+			</select>
+		</label>
+		
+	 </div>
+	</div>
+	
+	    <div class='item-container-footer'>
+		Asetukset näkyvät kellossasi vasta tallennuksen jälkeen.
+    </div>
+  </div>
+
+  <div class='item-container'>
+    <div class='button-container'>
+      <input id='submitButton' type='button' class='item-button' value='TALLENNA'>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src='../config/bower_components/pebble-slate/dist/js/slate.min.js'></script>
+  <script src='../config/js/main.js'></script>
+</body>
+</html>
