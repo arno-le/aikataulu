@@ -1,0 +1,80 @@
+{
+    "author": "arno.lehtonen@gmail.com",
+    "dependencies": {},
+    "keywords": [],
+    "name": "bussikello",
+    "pebble": {
+        "capabilities": [
+            "configurable"
+        ],
+        "displayName": "Bussikello",
+        "enableMultiJS": true,
+        "messageKeys": {
+            "KEY_CODE1": 11,
+            "KEY_CODE2": 12,
+            "KEY_INTERNET": 10,
+            "KEY_JS_READY": 9,
+            "KEY_LINE1": 0,
+            "KEY_LINE2": 2,
+            "KEY_REFRESH_RATE": 8,
+            "KEY_STOP1": 5,
+            "KEY_STOP2": 6,
+            "KEY_TIME1": 1,
+            "KEY_TIME2": 3,
+            "KEY_TIME_TO_DEPARTURE": 4,
+            "KEY_TWENTY_FOUR_HOUR_FORMAT": 7
+        },
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "fonts/AldotheApache.ttf",
+                    "name": "FONT_ALDO_18",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/AldotheApache.ttf",
+                    "name": "FONT_ALDO_26",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[0-9.:]",
+                    "file": "fonts/AldotheApache.ttf",
+                    "name": "FONT_ALDO_50",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/Obelus",
+                    "name": "FONT_OBELUS_32",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "images/buscome",
+                    "name": "IMAGE_BUS_ARRIVAL",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/busgo",
+                    "name": "IMAGE_BUS_DEPARTURE",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt"
+        ],
+        "uuid": "36ef6d14-3a58-4855-a698-b8a6755a8332",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.81.0"
+}
